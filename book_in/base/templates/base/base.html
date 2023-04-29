@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOOK-IN | {% block title %}{% endblock title %}</title>
+</head>
+
+<nav>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'cric-home' %}">cric</a></li>
+
+        {% if request.user.is_authenticated %}
+            
+            <li><a href="{% url 'logout' %}">Log Out</a></li>
+        
+        {% else %}
+
+            <li><a href="{% url 'login' %}">LogIn</a></li>
+            <li><a href="{% url 'sign-up' %}">SignUp</a></li>
+            
+        {% endif %}
+      </ul>
+</nav>
+
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
