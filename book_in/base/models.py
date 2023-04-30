@@ -8,5 +8,4 @@ class UserType(models.Model):
 	venue_user = models.BooleanField(default=False)
 
 	def __str__(self):
-		return f"{self.venue_user}"
-
+		return f"{self.user} - {self.venue_user}"
