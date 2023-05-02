@@ -35,5 +35,3 @@ V
 &base/templates/registration/login.html,2\4\247317686935c268bed3398cbcaead679c2b3607
 W
 'base/templates/registration/signup.html,e\6\e6bbfd8d19daa019432e21eca2e926d4e20d3116
-M
-base/templates/base/base.html,e\4\e492ba337e86c7f7cb07a906754d6e1d1700f6c3

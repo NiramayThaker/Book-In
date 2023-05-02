@@ -10,27 +10,52 @@
     <title>BOOK-IN | {% block title %}{% endblock title %}</title>
 </head>
 
-<nav>
-    <ul>
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'cric-home' %}">cric</a></li>
+{% if user_type.venue_user == True %}
 
-        {% if request.user.is_authenticated %}
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'cric-home' %}">cric</a></li>
+            <li><a href="#">Register Event</a></li>
 
-            <li><a href="{% url 'logout' %}">Log Out | {{request.user}}</a></li>
-        
-        {% else %}
+            {% if request.user.is_authenticated %}
 
-            <li><a href="{% url 'login' %}">LogIn</a></li>
-            <li><a href="{% url 'sign-up' %}">SignUp</a></li>
+                <li><a href="{% url 'logout' %}">Log Out | {{ request.user }}</a></li>
+                <li><a href="#">{{ request.user }}</a></li>
 
-        {% endif %}
-      </ul>
-</nav>
+            {% else %}
+
+                <li><a href="{% url 'login' %}">LogIn</a></li>
+                <li><a href="{% url 'sign-up' %}">SignUp</a></li>
+
+            {% endif %}
+        </ul>
+    </nav>
+
+{% else %}
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'cric-home' %}">cric</a></li>
+
+            {% if request.user.is_authenticated %}
+
+                <li><a href="{% url 'logout' %}">Log Out | {{ request.user }}</a></li>
+
+            {% else %}
+
+                <li><a href="{% url 'login' %}">LogIn</a></li>
+                <li><a href="{% url 'sign-up' %}">SignUp</a></li>
+
+            {% endif %}
+        </ul>
+    </nav>
+{% endif %}
 
 <body>
-    {% block content %}
+{% block content %}
 
-    {% endblock %}
+{% endblock %}
 </body>
 </html>
