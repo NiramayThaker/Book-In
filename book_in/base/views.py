@@ -28,6 +28,7 @@ def sign_up(request):
 		else:
 			is_venue = "False"
 
+
 		if form.is_valid():
 			try:
 				user = form.save()
