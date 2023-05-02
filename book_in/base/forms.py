@@ -5,7 +5,7 @@ from django import forms
 
 class RegistrationForm(UserCreationForm):
 	email = forms.EmailField(required=False)
-	is_venue_user = forms.BooleanField()
+	is_venue_user = forms.BooleanField(required=False)
 
 	class Meta:
 		model = User
