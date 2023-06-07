@@ -33,7 +33,3 @@ W
 'base/templates/registration/signup.html,e\6\e6bbfd8d19daa019432e21eca2e926d4e20d3116
 C
 book_in/settings.py,a\a\aaa9b652b0052b365af38a1111c657308344b96f
-=
-base/forms.py,c\b\cbe5b477b2f4c441a89b4abfd35a9cc06bd2349c
-=
-base/admin.py,9\7\975371957ebd8f6a90ec2d9cb4acbde7726d3523
