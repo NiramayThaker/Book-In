@@ -14,7 +14,11 @@ class UserType(models.Model):
 class EventBooking(models.Model):
 	event_org = models.ForeignKey(User, on_delete=models.CASCADE)
 	event = models.CharField(max_length=50)
-	date = models.DateTimeField()
+	date = models.DateField()
+	starting_time = models.TimeField()
+	ending_time = models.TimeField()
 	pass_price = models.FloatField()
 	place = models.TextField()
 
+	def __str__(self) -> str:
+		return f"{self.event}, by {self.event_org}, at {self.date}"

@@ -11,6 +11,7 @@ from .models import UserType
 def home(request):
 	user = User.objects.get(id=request.user.id)
 	is_venue_user = UserType.objects.get(user=user)
+	
 
 	context = {"user_type": is_venue_user}
 	return render(request, "base/home.html", context=context)
@@ -46,4 +47,3 @@ def sign_up(request):
 
 def event_reg(request):
 	return render(request, "base/event_reg.html")
-
