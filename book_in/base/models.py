@@ -9,3 +9,12 @@ class UserType(models.Model):
 
 	def __str__(self):
 		return f"{self.user} - {self.venue_user}"
+
+
+class EventBooking(models.Model):
+	event_org = models.ForeignKey(User, on_delete=models.CASCADE)
+	event = models.CharField(max_length=50)
+	date = models.DateTimeField()
+	pass_price = models.FloatField()
+	place = models.TextField()
+

@@ -15,8 +15,8 @@
     <nav>
         <ul>
             <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'cric-home' %}">cric</a></li>
-            <li><a href="#">Register Event</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="{% url 'event-reg' %}">Register Event</a></li>
 
             {% if request.user.is_authenticated %}
 
@@ -37,7 +37,7 @@
     <nav>
         <ul>
             <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="{% url 'cric-home' %}">cric</a></li>
+            {% comment %} <li><a href="{% url 'cric-home' %}">cric</a></li> {% endcomment %}
 
             {% if request.user.is_authenticated %}
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 from .forms import RegistrationForm
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
@@ -42,3 +42,8 @@ def sign_up(request):
 
 	context = {"form": form}
 	return render(request, "registration/signup.html", context=context)
+
+
+def event_reg(request):
+	return render(request, "base/event_reg.html")
+

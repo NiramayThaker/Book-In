@@ -21,12 +21,8 @@ B
 cric_book/admin.py,8\b\8bdd321125dfb526b4c5e01b0ee4f93b2e6d1268
 A
 cric_book/apps.py,8\3\83de5bd21f5da9619e349a9919c5303bc050292a
-<
-base/urls.py,1\d\1d5c58c9ce97bebb17761793282b0e3a9226391d
 B
 cric_book/views.py,9\3\93cc244de04528c5216d3cbedf0c56d876f929d5
-\
-,cric_book/templates/cric_book/cric_home.html,7\f\7f89843a96a088f23325b8955b062650a9f21dbb
 A
 cric_book/urls.py,3\3\332870741e94ebd00a130019285c6e48a208cc2d
 K
@@ -35,3 +31,9 @@ V
 &base/templates/registration/login.html,2\4\247317686935c268bed3398cbcaead679c2b3607
 W
 'base/templates/registration/signup.html,e\6\e6bbfd8d19daa019432e21eca2e926d4e20d3116
+C
+book_in/settings.py,a\a\aaa9b652b0052b365af38a1111c657308344b96f
+=
+base/forms.py,c\b\cbe5b477b2f4c441a89b4abfd35a9cc06bd2349c
+=
+base/admin.py,9\7\975371957ebd8f6a90ec2d9cb4acbde7726d3523
