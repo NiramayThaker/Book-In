@@ -4,7 +4,7 @@ from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from .models import UserType, EventBooking
-from datetime import date
+from datetime import date, datetime, timedelta
 
 
 # Create your views here.
@@ -13,10 +13,13 @@ def home(request):
 	user = User.objects.get(id=request.user.id)
 	is_venue_user = UserType.objects.get(user=user)
 	curr_date = date.today()
+	today = datetime.now()
+	tomm = today + timedelta(1)
+	tomm = tomm.strftime("%D:%M:%Y")
 	events = EventBooking.objects.all()
 
 
-	context = {"user_type": is_venue_user, "events": events, "curr_date": curr_date}
+	context = {"user_type": is_venue_user, "events": events, "curr_date": curr_date, "tomm": tomm}
 	return render(request, "base/home.html", context=context)
 
 

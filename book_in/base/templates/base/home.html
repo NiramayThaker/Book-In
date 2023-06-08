@@ -3,12 +3,12 @@
 {% block title %}HOME{% endblock title %}
 
 {% block content %}
-<h1>EVENTS</h1>
+<h1>Today's Events</h1>
 
 <hr>
 {% for event in events %}
 
-    {% if event.date >= curr_date %}
+    {% if event.date == curr_date %}
     
         Event: {{event.event}} <br>
         By: {{event.event_org}} <br>
