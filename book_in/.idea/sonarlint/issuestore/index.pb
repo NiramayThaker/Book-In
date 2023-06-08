@@ -53,8 +53,6 @@ w
 G.idea/sonarlint/issuestore/9/3/93cc244de04528c5216d3cbedf0c56d876f929d5,f\e\fe1a3e531d84f836dc4068a0ec393b4e74a2e1e1
 w
 G.idea/sonarlint/issuestore/9/0/900277dc64487ae9db6689e3d6a0adaa6a43df76,3\e\3e3f295a700afc704de2ec1b08eb3e37a15a5c92
-<
-base/urls.py,1\d\1d5c58c9ce97bebb17761793282b0e3a9226391d
 w
 G.idea/sonarlint/issuestore/8/3/83de5bd21f5da9619e349a9919c5303bc050292a,e\0\e07fd9cb1b813910a2d4c4b6a7e7fd695f0e3cd1
 w
@@ -69,15 +67,9 @@ w
 G.idea/sonarlint/issuestore/3/3/332870741e94ebd00a130019285c6e48a208cc2d,7\b\7bd17a0dad7d35540eb2681c9577a8d39be41f5c
 w
 G.idea/sonarlint/issuestore/3/d/3d545b3221f8827db7e5025c60b33e688577eac5,2\7\27e506239d94d21e0cd1b113df0dca9636bca401
-R
-"base/templates/base/event_reg.html,c\9\c9e3a08d8e30264136efedcd1313a5e8dbf73c3d
 w
 G.idea/sonarlint/issuestore/2/4/247317686935c268bed3398cbcaead679c2b3607,9\b\9b5d80a49aa62feee2bedd8225596cb5b6a5d137
 w
 G.idea/sonarlint/issuestore/1/8/18a9d7f7ee96ec8b3816dd378e4fd8b5f64dbc59,1\6\16e2051fdb7fa2915964b0ffe2cb4c8b0b01cd39
->
-base/models.py,7\9\79190922dd98f80068a283410b513a280e5c3b30
-=
-base/forms.py,c\b\cbe5b477b2f4c441a89b4abfd35a9cc06bd2349c
 =
 base/admin.py,9\7\975371957ebd8f6a90ec2d9cb4acbde7726d3523

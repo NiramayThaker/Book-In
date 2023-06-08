@@ -37,7 +37,7 @@
     <nav>
         <ul>
             <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="#">All Events</a></li>
+            <li><a href="{% url 'all-events' %}">All Events</a></li>
 
             {% if request.user.is_authenticated %}
 
