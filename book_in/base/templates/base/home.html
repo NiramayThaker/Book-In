@@ -8,19 +8,19 @@
 <hr>
 {% for event in events %}
 
-    {% if event.date == curr_date %}
-    
-        Event: {{event.event}} <br>
-        By: {{event.event_org}} <br>
-        At: {{event.date}} <br>
-        Starts at: {{event.starting_time}} <br>
-        Ends at: {{event.ending_time}} <br>
-
-        <button type="submit"><a href="{% url 'book-event' %}">Book our place</a></button>
+        {% if event.date == curr_date %}
         
-    <hr>
-    {% endif %}
-    
+            Event: {{event.event}} <br>
+            By: {{event.event_org}} <br>
+            At: {{event.date}} <br>
+            Starts at: {{event.starting_time}} <br>
+            Ends at: {{event.ending_time}} <br>
+
+            <button type="submit"><a href="{% url 'book-event' %}">Book our place</a></button>
+            
+        <hr>
+        {% endif %}
+        
     {% endfor %}
 
 {% endblock content %}
