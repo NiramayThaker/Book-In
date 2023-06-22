@@ -27,3 +27,4 @@ class EventBooking(models.Model):
 class UserEventBooking(models.Model):
 	user_name = models.ForeignKey(User, on_delete=models.CASCADE)
 	event = models.ForeignKey(EventBooking, on_delete=models.CASCADE)
+

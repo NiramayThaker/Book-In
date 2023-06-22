@@ -25,3 +25,4 @@ class UserEventBookingForm(forms.ModelForm):
 		model = UserEventBooking
 		fields = "__all__"
 		exclude = ['user_name']
+
