@@ -71,5 +71,3 @@ w
 G.idea/sonarlint/issuestore/2/4/247317686935c268bed3398cbcaead679c2b3607,9\b\9b5d80a49aa62feee2bedd8225596cb5b6a5d137
 w
 G.idea/sonarlint/issuestore/1/8/18a9d7f7ee96ec8b3816dd378e4fd8b5f64dbc59,1\6\16e2051fdb7fa2915964b0ffe2cb4c8b0b01cd39
-=
-base/admin.py,9\7\975371957ebd8f6a90ec2d9cb4acbde7726d3523

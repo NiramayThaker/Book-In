@@ -1,0 +1,5 @@
+User Reg ✔
+User type set ✔
+Event Reg ✔
+User booking 
+User access restrictions (as per their type)

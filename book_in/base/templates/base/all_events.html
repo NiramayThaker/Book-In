@@ -1,14 +1,14 @@
 {% extends 'base/base.html' %}
 
-{% block title %}HOME{% endblock title %}
+{% block title %}| EVENTS{% endblock title %}
 
 {% block content %}
-<h1>Today's Events</h1>
+<h1>All Events</h1>
 
 <hr>
-{% for event in events %}
+{% for event in events reversed %}
 
-    {% if event.date == curr_date %}
+    {% if event.date >= curr_date %}
     
         Event: {{event.event}} <br>
         By: {{event.event_org}} <br>
@@ -18,10 +18,9 @@
 
         <button type="submit"><a href="{% url 'book-event' %}">Book our place</a></button>
         
-    <hr>
+        <hr>
     {% endif %}
     
-    {% endfor %}
+{% endfor %}
 
 {% endblock content %}
-

@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, HttpResponse
-from .forms import RegistrationForm, EventRegsitrationForm
+from .forms import RegistrationForm, EventRegsitrationForm, UserEventBookingForm
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
@@ -54,6 +54,15 @@ def sign_up(request):
 def event_reg(request):
 	form = EventRegsitrationForm()
 
+	if request.method == "POST":
+		form = EventRegsitrationForm(request.POST)
+		if form.is_valid:
+			event = form.save(commit=False)
+			event.event_org = request.user
+			event.save()
+
+			return redirect("/")
+
 	context = {"form": form}
 	return render(request, "base/event_reg.html", context=context)
 
@@ -64,3 +73,10 @@ def view_events(request):
 
 	context = {"events": events, "curr_date": curr_date}
 	return render(request, "base/all_events.html", context=context)
+
+
+def book_event(request):
+	form = UserEventBookingForm()
+
+	context = {'form': form}
+	return render(request, "base/user_booking.html", context=context)

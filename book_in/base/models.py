@@ -22,3 +22,8 @@ class EventBooking(models.Model):
 
 	def __str__(self) -> str:
 		return f"{self.event}, by {self.event_org}, at {self.date}"
+
+
+class UserEventBooking(models.Model):
+	user_name = models.ForeignKey(User, on_delete=models.CASCADE)
+	event = models.ForeignKey(EventBooking, on_delete=models.CASCADE)

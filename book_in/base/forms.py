@@ -1,7 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django import forms
-from .models import EventBooking
+from .models import EventBooking, UserEventBooking
 
 
 class RegistrationForm(UserCreationForm):
@@ -18,3 +18,10 @@ class EventRegsitrationForm(forms.ModelForm):
 		model = EventBooking
 		fields = "__all__"
 		exclude = ['event_org']
+
+
+class UserEventBookingForm(forms.ModelForm):
+	class Meta:
+		model = UserEventBooking
+		fields = "__all__"
+		exclude = ['user_name']
