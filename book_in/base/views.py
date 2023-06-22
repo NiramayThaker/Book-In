@@ -80,3 +80,4 @@ def book_event(request):
 
 	context = {'form': form}
 	return render(request, "base/user_booking.html", context=context)
+
